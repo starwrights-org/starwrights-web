@@ -230,7 +230,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-center gap-12">
             <div>
               <div className="text-sm text-gray-400 mb-1">{t.contact.email}</div>
-              <div className="text-white font-medium">contact@starwrights.com</div>
+              <div className="text-white font-medium">contact@starwrights.ai</div>
             </div>
             <div>
               <div className="text-sm text-gray-400 mb-1">{t.contact.location}</div>
