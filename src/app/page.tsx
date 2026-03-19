@@ -131,8 +131,11 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="font-bold text-xl tracking-tight" style={{ color: "#1a56db" }}>
-            {lang === "zh" ? "星匠科技" : "Starwrights"}
+          <div className="flex items-center gap-2">
+            <img src="/logo.svg" alt="Starwrights" className="h-8 w-8" />
+            <span className="font-bold text-xl tracking-tight" style={{ color: "#295C8F" }}>
+              {lang === "zh" ? "星匠科技" : "Starwrights"}
+            </span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm">
             <a href="#about" className="text-gray-600 hover:text-gray-900 transition">{t.nav.about}</a>
@@ -152,11 +155,12 @@ export default function Home() {
       {/* Hero */}
       <section className="pt-32 pb-24 px-6" style={{ background: "linear-gradient(135deg, #f0f5ff 0%, #e8eeff 50%, #f5f0ff 100%)" }}>
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-sm font-medium tracking-widest uppercase mb-4" style={{ color: "#1a56db" }}>{t.hero.tagline}</p>
+          <img src="/logo.svg" alt="Starwrights" className="h-24 w-24 mx-auto mb-6" />
+          <p className="text-sm font-medium tracking-widest uppercase mb-4" style={{ color: "#295C8F" }}>{t.hero.tagline}</p>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-4" style={{ color: "#111827" }}>{t.hero.title}</h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-2">{t.hero.subtitle}</p>
           <p className="text-base text-gray-500 mb-10 max-w-2xl mx-auto">{t.hero.desc}</p>
-          <a href="#about" className="inline-block px-8 py-3 rounded-full text-white font-medium text-sm transition hover:opacity-90" style={{ background: "linear-gradient(135deg, #1a56db, #7c3aed)" }}>
+          <a href="#about" className="inline-block px-8 py-3 rounded-full text-white font-medium text-sm transition hover:opacity-90" style={{ background: "linear-gradient(135deg, #295C8F, #1a3f6b)" }}>
             {t.hero.cta}
           </a>
         </div>
@@ -175,7 +179,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-6">
               {t.about.stats.map((s, i) => (
                 <div key={i} className="bg-gray-50 rounded-2xl p-6 text-center">
-                  <div className="text-xl font-bold mb-1" style={{ color: "#1a56db" }}>{s.value}</div>
+                  <div className="text-xl font-bold mb-1" style={{ color: "#295C8F" }}>{s.value}</div>
                   <div className="text-sm text-gray-500">{s.label}</div>
                 </div>
               ))}
@@ -194,7 +198,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {t.services.items.map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
-                <div className="mb-5" style={{ color: "#1a56db" }}><Icon name={item.icon} /></div>
+                <div className="mb-5" style={{ color: "#295C8F" }}><Icon name={item.icon} /></div>
                 <h3 className="font-semibold text-lg mb-3">{item.title}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
@@ -213,7 +217,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             {t.products.items.map((item, i) => (
               <div key={i} className="border border-gray-200 rounded-2xl p-8 hover:border-blue-200 transition">
-                <span className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-4" style={{ background: "#eef2ff", color: "#1a56db" }}>{item.tag}</span>
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-4" style={{ background: "#eef2ff", color: "#295C8F" }}>{item.tag}</span>
                 <h3 className="font-semibold text-xl mb-3">{item.title}</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
