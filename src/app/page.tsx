@@ -172,19 +172,14 @@ export default function Home() {
 
       {/* Hero */}
       <section className="pt-28 pb-24 px-6" style={{ background: "linear-gradient(135deg, #f0f5ff 0%, #e8eeff 50%, #f5f0ff 100%)" }}>
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
-          <div className="flex-shrink-0 flex items-center justify-center">
-            <img src="/logo-gradient.svg" alt="Starwrights" className="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 object-contain" />
-          </div>
-          <div className="text-center md:text-left">
-            <p className="text-sm font-medium tracking-widest uppercase mb-4" style={{ color: "#295C8F" }}>{t.hero.tagline}</p>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4" style={{ color: "#111827" }}>{t.hero.title}</h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-2">{t.hero.subtitle}</p>
-            <p className="text-base text-gray-500 mb-10 max-w-2xl">{t.hero.desc}</p>
-            <a href="#about" className="inline-block px-8 py-3 rounded-full text-white font-medium text-sm transition hover:opacity-90" style={{ background: "linear-gradient(135deg, #295C8F, #7c3aed)" }}>
-              {t.hero.cta}
-            </a>
-          </div>
+        <div className="max-w-6xl mx-auto text-center">
+          <img src="/logo-gradient.svg" alt="Starwrights" className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto object-contain" />
+          <p className="text-sm font-medium tracking-widest uppercase mt-8 mb-4" style={{ color: "#295C8F" }}>{t.hero.tagline}</p>
+          <p className="text-xl md:text-2xl text-gray-600 mb-2">{t.hero.subtitle}</p>
+          <p className="text-base text-gray-500 mb-10 max-w-2xl mx-auto">{t.hero.desc}</p>
+          <a href="#about" className="inline-block px-8 py-3 rounded-full text-white font-medium text-sm transition hover:opacity-90" style={{ background: "linear-gradient(135deg, #295C8F, #7c3aed)" }}>
+            {t.hero.cta}
+          </a>
         </div>
       </section>
 
