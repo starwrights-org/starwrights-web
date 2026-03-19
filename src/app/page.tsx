@@ -128,6 +128,20 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Starwrights Technology (Hong Kong) Limited",
+        "alternateName": ["星匠科技", "星匠科技（香港）有限公司", "Starwrights"],
+        "url": "https://starwrights.ai",
+        "logo": "https://starwrights.ai/logo.svg",
+        "description": "FinTech-focused SaaS solutions provider for financial institutions in Hong Kong and the Greater Bay Area.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Hong Kong", "addressCountry": "HK" },
+        "areaServed": ["Hong Kong", "Greater Bay Area", "Asia Pacific"],
+        "knowsAbout": ["FinTech", "SaaS", "Financial Technology", "Digital Transformation", "AI", "Cloud-Native"],
+        "sameAs": []
+      }) }} />
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
