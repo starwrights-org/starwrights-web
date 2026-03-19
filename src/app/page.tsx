@@ -176,7 +176,6 @@ export default function Home() {
           <div className="flex-shrink-0 flex items-center justify-center">
             <img src="/logo-gradient.svg" alt="Starwrights" className="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 object-contain" />
           </div>
-          </div>
           <div className="text-center md:text-left">
             <p className="text-sm font-medium tracking-widest uppercase mb-4" style={{ color: "#295C8F" }}>{t.hero.tagline}</p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4" style={{ color: "#111827" }}>{t.hero.title}</h1>
