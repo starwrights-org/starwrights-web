@@ -142,12 +142,16 @@ export default function Home() {
             <a href="#services" className="text-gray-600 hover:text-gray-900 transition">{t.nav.services}</a>
             <a href="#products" className="text-gray-600 hover:text-gray-900 transition">{t.nav.products}</a>
             <a href="#contact" className="text-gray-600 hover:text-gray-900 transition">{t.nav.contact}</a>
-            <button onClick={() => setLang(lang === "zh" ? "en" : "zh")} className="px-3 py-1 rounded-full border border-gray-300 text-xs font-medium hover:bg-gray-50 transition">
-              {lang === "zh" ? "EN" : "中文"}
+            <button onClick={() => setLang(lang === "zh" ? "en" : "zh")} className="flex items-center gap-1 px-3 py-1 rounded-full border border-gray-300 text-xs font-medium hover:bg-gray-50 transition">
+              <span style={{ opacity: lang === "en" ? 1 : 0.4 }}>EN</span>
+              <span className="text-gray-300">|</span>
+              <span style={{ opacity: lang === "zh" ? 1 : 0.4 }}>中文</span>
             </button>
           </div>
-          <button onClick={() => setLang(lang === "zh" ? "en" : "zh")} className="md:hidden px-3 py-1 rounded-full border border-gray-300 text-xs font-medium">
-            {lang === "zh" ? "EN" : "中文"}
+          <button onClick={() => setLang(lang === "zh" ? "en" : "zh")} className="md:hidden flex items-center gap-1 px-3 py-1 rounded-full border border-gray-300 text-xs font-medium">
+            <span style={{ opacity: lang === "en" ? 1 : 0.4 }}>EN</span>
+            <span className="text-gray-300">|</span>
+            <span style={{ opacity: lang === "zh" ? 1 : 0.4 }}>中文</span>
           </button>
         </div>
       </nav>
