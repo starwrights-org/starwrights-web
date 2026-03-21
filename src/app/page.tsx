@@ -50,7 +50,7 @@ const content = {
       subtitle: "期待与您合作",
       email: "联系邮箱",
       location: "公司地址",
-      locationValue: "中国香港",
+      locationValue: "香港特别行政区湾仔区轩尼诗道288号英皇集团中心19楼1901室",
     },
     footer: {
       company: "星匠科技（香港）有限公司",
@@ -103,7 +103,7 @@ const content = {
       subtitle: "Let's work together",
       email: "Email",
       location: "Location",
-      locationValue: "Hong Kong, China",
+      locationValue: "Flat 1901, 19/F, Emperor Group Centre, 288 Hennessy Road, Wan Chai, Hong Kong SAR",
     },
     footer: {
       company: "Starwrights Technology (Hong Kong) Limited",
