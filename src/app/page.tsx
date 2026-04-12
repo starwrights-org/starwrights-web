@@ -157,7 +157,6 @@ export default function Home() {
             <a href="#about" className="text-gray-600 hover:text-gray-900 transition">{t.nav.about}</a>
             <a href="#services" className="text-gray-600 hover:text-gray-900 transition">{t.nav.services}</a>
             <a href="#products" className="text-gray-600 hover:text-gray-900 transition">{t.nav.products}</a>
-            <a href="https://techdaily.starwrights.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium transition">{t.nav.techdaily}</a>
             <a href="#contact" className="text-gray-600 hover:text-gray-900 transition">{t.nav.contact}</a>
             <button onClick={() => setLang(lang === "zh" ? "en" : "zh")} className="flex items-center gap-1 px-3 py-1 rounded-full border border-gray-300 text-xs font-medium hover:bg-gray-50 transition">
               <span style={{ opacity: lang === "en" ? 1 : 0.4 }}>EN</span>
