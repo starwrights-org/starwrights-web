@@ -5,7 +5,7 @@ type Lang = "zh" | "en";
 
 const content = {
   zh: {
-    nav: { about: "关于我们", services: "核心服务", products: "产品", contact: "联系我们" },
+    nav: { about: "关于我们", services: "核心服务", products: "产品", techdaily: "星匠快讯", contact: "联系我们" },
     hero: {
       tagline: "Agentic AI 驱动金融创新",
       title: "星匠科技",
@@ -43,6 +43,7 @@ const content = {
         { title: "财务流程优化系统", desc: "自动化财务流程，从账单处理到合规报告，大幅降低人工操作成本。", tag: "流程优化" },
         { title: "保险销售赋能工具", desc: "为保险销售团队提供智能化的客户管理、产品推荐和业绩追踪工具。", tag: "销售赋能" },
         { title: "互动娱乐应用", desc: "创新型互动娱乐产品，将游戏化元素融入金融教育和用户参与。", tag: "用户参与" },
+        { title: "TechDaily 星匠快讯", desc: "AI 驱动的每日科技新闻摘要，深度分析 + 投资信号（🔴🟡🔵），中英双语，RSS/API 支持。", tag: "AI 资讯", url: "https://techdaily.starwrights.ai" },
       ],
     },
     contact: {
@@ -58,7 +59,7 @@ const content = {
     },
   },
   en: {
-    nav: { about: "About", services: "Services", products: "Products", contact: "Contact" },
+    nav: { about: "About", services: "Services", products: "Products", techdaily: "TechDaily", contact: "Contact" },
     hero: {
       tagline: "Agentic AI for Financial Innovation",
       title: "Starwrights Technology",
@@ -96,6 +97,7 @@ const content = {
         { title: "Financial Workflow System", desc: "Automated financial processes from billing to compliance reporting, significantly reducing manual costs.", tag: "Optimization" },
         { title: "Insurance Sales Enablement", desc: "Smart tools for insurance teams — client management, product recommendations, and performance tracking.", tag: "Sales" },
         { title: "Interactive Entertainment", desc: "Innovative products blending gamification with financial education and user engagement.", tag: "Engagement" },
+        { title: "TechDaily 星匠快讯", desc: "AI-powered daily tech news digest with deep analysis, investment signals (🔴🟡🔵), bilingual EN/中文, RSS/API.", tag: "AI News", url: "https://techdaily.starwrights.ai" },
       ],
     },
     contact: {
@@ -155,6 +157,7 @@ export default function Home() {
             <a href="#about" className="text-gray-600 hover:text-gray-900 transition">{t.nav.about}</a>
             <a href="#services" className="text-gray-600 hover:text-gray-900 transition">{t.nav.services}</a>
             <a href="#products" className="text-gray-600 hover:text-gray-900 transition">{t.nav.products}</a>
+            <a href="https://techdaily.starwrights.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium transition">{t.nav.techdaily}</a>
             <a href="#contact" className="text-gray-600 hover:text-gray-900 transition">{t.nav.contact}</a>
             <button onClick={() => setLang(lang === "zh" ? "en" : "zh")} className="flex items-center gap-1 px-3 py-1 rounded-full border border-gray-300 text-xs font-medium hover:bg-gray-50 transition">
               <span style={{ opacity: lang === "en" ? 1 : 0.4 }}>EN</span>
@@ -232,11 +235,17 @@ export default function Home() {
             <p className="text-gray-500">{t.products.subtitle}</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            {t.products.items.map((item, i) => (
+            {t.products.items.map((item: any, i: number) => (
               <div key={i} className="border border-gray-200 rounded-2xl p-8 hover:border-blue-200 transition">
                 <span className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-4" style={{ background: "#eef2ff", color: "#295C8F" }}>{item.tag}</span>
                 <h3 className="font-semibold text-xl mb-3">{item.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                <p className="text-sm text-gray-500 leading-relaxed mb-4">{item.desc}</p>
+                {item.url && (
+                  <a href={item.url} target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-800 transition">
+                    Visit →
+                  </a>
+                )}
               </div>
             ))}
           </div>
