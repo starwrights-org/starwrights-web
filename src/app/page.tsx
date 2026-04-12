@@ -39,7 +39,7 @@ const content = {
       title: "核心产品",
       subtitle: "已验证的行业解决方案",
       items: [
-        { title: "公司秘书管理平台", desc: "一站式公司秘书事务管理，包括公司注册、年审、变更等全生命周期管理。", tag: "企业管理" },
+        { title: "公司秘书管理平台", desc: "一站式公司秘书事务管理，包括公司注册、年审、变更等全生命周期管理。", tag: "企业管理", url: "https://agent.doraxin.com/" },
         { title: "财务流程优化系统", desc: "自动化财务流程，从账单处理到合规报告，大幅降低人工操作成本。", tag: "流程优化" },
         { title: "保险销售赋能工具", desc: "为保险销售团队提供智能化的客户管理、产品推荐和业绩追踪工具。", tag: "销售赋能" },
         { title: "互动娱乐应用", desc: "创新型互动娱乐产品，将游戏化元素融入金融教育和用户参与。", tag: "用户参与" },
@@ -93,7 +93,7 @@ const content = {
       title: "Products",
       subtitle: "Proven industry solutions",
       items: [
-        { title: "Company Secretary Platform", desc: "One-stop company secretarial management including registration, annual review, and lifecycle management.", tag: "Enterprise" },
+        { title: "Company Secretary Platform", desc: "One-stop company secretarial management including registration, annual review, and lifecycle management.", tag: "Enterprise", url: "https://agent.doraxin.com/" },
         { title: "Financial Workflow System", desc: "Automated financial processes from billing to compliance reporting, significantly reducing manual costs.", tag: "Optimization" },
         { title: "Insurance Sales Enablement", desc: "Smart tools for insurance teams — client management, product recommendations, and performance tracking.", tag: "Sales" },
         { title: "Interactive Entertainment", desc: "Innovative products blending gamification with financial education and user engagement.", tag: "Engagement" },
