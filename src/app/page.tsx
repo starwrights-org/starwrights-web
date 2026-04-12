@@ -43,7 +43,7 @@ const content = {
         { title: "财务流程优化系统", desc: "自动化财务流程，从账单处理到合规报告，大幅降低人工操作成本。", tag: "流程优化" },
         { title: "保险销售赋能工具", desc: "为保险销售团队提供智能化的客户管理、产品推荐和业绩追踪工具。", tag: "销售赋能" },
         { title: "互动娱乐应用", desc: "创新型互动娱乐产品，将游戏化元素融入金融教育和用户参与。", tag: "用户参与" },
-        { title: "TechDaily 星匠快讯", desc: "AI 驱动的每日科技新闻摘要，深度分析 + 投资信号（🔴🟡🔵），中英双语，RSS/API 支持。", tag: "AI 资讯", url: "https://techdaily.starwrights.ai" },
+        { title: "TechDaily 星匠快讯", desc: "AI 驱动的每日科技新闻摘要，深度分析 + 投资信号，中英双语，RSS/API 支持。", tag: "AI 资讯", url: "https://techdaily.starwrights.ai" },
       ],
     },
     contact: {
@@ -97,7 +97,7 @@ const content = {
         { title: "Financial Workflow System", desc: "Automated financial processes from billing to compliance reporting, significantly reducing manual costs.", tag: "Optimization" },
         { title: "Insurance Sales Enablement", desc: "Smart tools for insurance teams — client management, product recommendations, and performance tracking.", tag: "Sales" },
         { title: "Interactive Entertainment", desc: "Innovative products blending gamification with financial education and user engagement.", tag: "Engagement" },
-        { title: "TechDaily 星匠快讯", desc: "AI-powered daily tech news digest with deep analysis, investment signals (🔴🟡🔵), bilingual EN/中文, RSS/API.", tag: "AI News", url: "https://techdaily.starwrights.ai" },
+        { title: "TechDaily 星匠快讯", desc: "AI-powered daily tech news digest with deep analysis, investment signals, bilingual EN/中文, RSS/API.", tag: "AI News", url: "https://techdaily.starwrights.ai" },
       ],
     },
     contact: {
